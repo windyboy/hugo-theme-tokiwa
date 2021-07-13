@@ -10,11 +10,10 @@
 			{{- .Content -}}
 		</div>
 	</section>
-
-	{{ if (and .Site.Params.remark42SiteID .Params.comments) }}
-		<div id="remark42"></div>
-	{{ end }}
 </article>
+{{ if (and .Site.Params.remark42SiteID .Params.comments) }}
+		<div id="remark42"></div>
+{{ end }}
 {{ end }}
 
 {{ define "aside" }}
