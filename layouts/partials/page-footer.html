@@ -46,7 +46,7 @@
     host: {{ .Site.Params.remark42Url }},
     site_id: {{ .Site.Params.remark42SiteID }},
     url: {{ .Permalink }},
-    locale: { .Site.Language.Lang }
+    locale: {{ .Site.Language.Lang }}
   };
 
   (function(c) {
